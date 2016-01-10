@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/welcome_hello"
+    />
+    
+    <TableRow android:orientation="horizontal"
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content">
+                  
+         <TextView   
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:text="@string/username"
+         />
+         
+         <EditText android:id="@+id/username_info"
+             android:hint ="@string/username"
+             android:maxLength="8"
+             android:maxLines="1"
+             android:layout_weight="1.0"
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:text=""
+         />
+    </TableRow>
+    
+    <TableRow android:orientation="horizontal"
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content">
+                  
+         <TextView 
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:text="@string/password"
+         />
+         
+         <EditText android:id="@+id/password_info"
+             android:hint ="@string/password"
+             android:password="true"
+             android:maxLength="10"
+             android:maxLines="1"
+             android:layout_weight="1.0"
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+             android:text=""
+         />
+    </TableRow>
+    
+     <LinearLayout android:orientation="horizontal"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content">
+                  
+           <Button android:id="@+id/login_ok"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.0"
+                   android:text="@string/login"
+           />
+           
+           <Button android:id="@+id/login_reset"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.0"
+                   android:text="@string/reset"
+           />
+    </LinearLayout>
+    
+     <LinearLayout android:orientation="horizontal"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content">
+                  
+           <Button android:id="@+id/register"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.0"
+                   android:text="@string/register"
+           />
+           <Button android:id="@+id/exit"
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.0"
+                   android:text="@string/exit"
+           />
+    </LinearLayout>
+    
+</TableLayout>
